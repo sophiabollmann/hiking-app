@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" type="text/css" />
+    <title>Hiking Techniques Lessons</title>
+  </head>
+  <body>
+    <div class="main-text">
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="images/hiking.png" alt="hiking-image" class="img-fluid" />
+          </div>
+          <div class="col-sm-6">
+            <h1 class="mb-3">🌲🏃🏼‍♀️ Hiking</h1>
+            <h2>Discipline</h2>
+            <p>
+              Hiking is a long, vigorous walk, usually on trails or footpaths in
+              the countryside. Walking for pleasure developed in Europe during
+              the eighteenth century.[1] Religious pilgrimages have existed much
+              longer but they involve walking long distances for a spiritual
+              purpose associated with specific religions.
+            </p>
+            <div>
+              <a
+                href="https://en.wikipedia.org/wiki/Hiking"
+                target="_blank"
+                class="link"
+              >
+                Learn more on Wikipedia</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="horizontal-line" />
+      <div class="d-grid gap-2 col-6 mx-auto mt-4">
+        <button class="btn" type="button" class="button">
+          Go to a Hiking Techniques Lesson
+        </button>
+      </div>
+      <br class="blackline" />
+      <footer class="text-center">
+        Coded by
+        <a href="https://github.com/sophiabollmann" target="blank" class="link"
+          >Sophia Bollmann</a
+        >
+      </footer>
+    </div>
+    <script>
+      function getInfo() {
+        let name = prompt("What is your name?");
+        let email = prompt("What email address can we contact you at?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert("Thank you, " + name + ". We'll be in touch at " + email);
+        } else {
+          alert("Sorry, we were not able to get your info 😔");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", getInfo);
+    </script>
+  </body>
+</html>
